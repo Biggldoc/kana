@@ -1,0 +1,358 @@
+    /*==== BASE STYLES ===
+==========================*/
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-size: 10px;
+    }
+    
+    body {
+      font-family: 'Oxygen', Helvetica, sans-serif;
+      font-size: 16px;
+      background: #FAFAFA;
+      color: #484848;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #484848;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      max-width: 100%
+    }
+    
+    address {
+      font-style: normal;
+    }
+    /*=BASE LAYOUT STYLES=
+==========================*/
+    /* LAYOUT CONTAINERS */
+    
+    .main_content {
+      padding-bottom: 2.93em;
+      color: #8B9090;
+    }
+    
+    .main_header {
+      padding-bottom: 2.62em;
+      padding-top: 1.68em;
+    }
+    
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    
+    .contact,
+    .portfolio,
+    .main_header,
+    .main_content {
+      text-align: center;
+    }
+    
+    .portfolio {
+      padding-top: 3.12em;
+      background: #EDEDED;
+    }
+    
+    .contact {
+      padding-top: 4em;
+    }
+    
+    .contact>.container {
+      max-width: 520px;
+    }
+    
+    .skills {
+      text-align: center;
+      border-top: 1px solid #E8E8E8;
+    }
+    /* NAVIGATION */
+    
+    .student_name,
+    .main_nav__list,
+    .main_nav__item,
+    .main_nav__item a {
+      display: block;
+    }
+    
+    .main_nav__item a {
+      font-weight: 700;
+      padding: .94em 0;
+      margin: .32em 0;
+      background: #fff;
+      transition: .4s all;
+    }
+    
+    .main_nav__item a:hover {
+      color: rgba(0, 0, 0, .7);
+      background: #EDEDED;
+    }
+    
+    .main_nav__list {
+      padding: 0;
+      text-transform: uppercase;
+      list-style-type: none;
+    }
+    /* MAIN CONTENT */
+    
+    .main_content__text {
+      color: rgba(0, 0, 0, .9);
+      margin-bottom: 0;
+      margin-top: 29px;
+      line-height: 1.3;
+    }
+    /* ELEMENTS */
+    
+    .student_name {
+      margin: 0;
+      padding-bottom: 1.66em;
+      font-family: 'Cabin Sketch', cursive;
+      /*padding-bottom 30px */
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      /* 1rem = 10px */
+    }
+    
+    .section_headline {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    /* PORTFOLIO */
+    
+    .portfolio__gallery {
+      padding-bottom: 1.68em;
+    }
+    
+    .gallery__headline {
+      font-size: 2.1rem;
+      padding-top: 1.66em;
+      padding-bottom: 1.04em;
+      margin: 0;
+    }
+    
+    .gallery__text {
+      margin: 0;
+      padding-bottom: 2.25em;
+    }
+    
+    .portfolio_headline {
+      margin: 0;
+      padding-bottom: 3.25em;
+    }
+    /* CONTACT */
+    
+    .contact {
+      padding-bottom: 4.18em;
+    }
+    
+    .contact__headline {
+      margin: 0;
+      padding-bottom: 2.5em;
+    }
+    
+    .info__item {
+      display: block;
+    }
+    
+    .contact__text {
+      margin: 0;
+      padding-bottom: 2.5em;
+    }
+    
+    .contact__phone,
+    .contact__email {
+      font-weight: 700;
+    }
+    
+    .contact__info span:first-child {
+      padding-bottom: 1.62em;
+    }
+    /* SKILLS */
+    
+    .skills__list {
+      list-style-type: none;
+    }
+    
+    .skills__item {
+      padding: 5px;
+      margin: 5px;
+      color: #fff;
+      background: firebrick;
+      font-weight: 700;
+      border-radius: 5px;
+      display: block;
+      transition: all .5s;
+      cursor: pointer;
+    }
+    
+    .skills__item:hover {
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+      transform: scale(1.1);
+    }
+    
+    .skills__item:last-child {
+      margin-bottom: 1em;
+    }
+    /* FOOTER */
+    
+    .footer_nav {
+      padding-bottom: 2.12em;
+      padding-top: 1.75em;
+      border-top: 1px solid #E8E8E8;
+    }
+    
+    .footer_nav__mobile_list {
+      list-style-type: none;
+    }
+    
+    .mobile_list__item {
+      display: inline-block;
+      font-weight: 700;
+    }
+    
+    .mobile_list__item:nth-child(1) {
+      float: left;
+    }
+    
+    .mobile_list__item:nth-child(2) {
+      float: right;
+      text-transform: uppercase;
+    }
+    
+    .footer_nav__desktop_list {
+      display: none;
+    }
+    
+    .footer__student_name {
+      display: none;
+    }
+    /* KANA */
+    
+    .kana_hello {
+      display: none;
+    }
+    /* CLEARFIX */
+    
+    .clearfix::before,
+    .clearfix::after {
+      content: "";
+      display: block;
+    }
+    
+    .clearfix::after {
+      clear: both;
+    }
+    /*= MEDIA QUERIES =
+======================= */
+    
+    @media (min-width: 768px) {
+      .main_nav__item {
+        display: inline-block;
+        padding: 0 2.56em 0 0;
+      }
+      .main_nav__item:last-child {
+        padding-right: 0;
+      }
+      .main_nav__item a {
+        background: #FAFAFA;
+        padding: 0;
+      }
+      .main_nav__item a:hover {
+        background: transparent;
+        transform: scale(1.2);
+      }
+      .main_content__img {
+        float: right;
+        width: 43%
+      }
+      .main_content__text {
+        padding-right: 1.31em;
+        text-align: left;
+        float: left;
+        margin-top: 0;
+        width: 57%;
+      }
+      .portfolio__gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .gallery__body {
+        max-width: calc(50% - 0.37em);
+      }
+      .gallery__headline {
+        /*fz 21px */
+        padding-top: 1.61em;
+      }
+      .contact__headline {
+        padding-bottom: 3.5em;
+      }
+      .footer_nav__mobile_list {
+        display: none;
+      }
+      .desktop_list__item {
+        padding-left: 1.87em;
+      }
+      .desktop_list__item:first-child {
+        padding-left: 0;
+      }
+      .footer__student_name,
+      .desktop_list__item {
+        display: inline-block;
+        transition: .4s all;
+      }
+      .footer_nav__desktop_list {
+        display: block;
+        float: right;
+        font-weight: 700;
+        list-style-type: none;
+        text-transform: uppercase;
+      }
+      .desktop_list__item:hover {
+        transform: scale(1.2);
+      }
+      .footer__student_name {
+        font-family: 'Cabin Sketch', cursive;
+        margin: 0;
+        float: left;
+      }
+      .kana_hello {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+      }
+      .skills__item {
+        display: inline-block;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .main_header {
+        padding-bottom: 3.75em;
+        padding-top: 4.25em;
+      }
+      .main_nav {
+        float: right;
+      }
+      .student_name {
+        float: left;
+      }
+      .gallery__body {
+        max-width: calc(33.33% - 0.56em);
+      }
+    }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mobile-first Responsive Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/new-version.css" />
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main_header">
+    <div class="container clearfix">
+      <h1 class="student_name">Nik Kolosoff</h1>
+      <nav class="main_nav">
+        <ul class="main_nav__list">
+          <li class="main_nav__item"><a href="new-version.html">Home</a></li>
+          <li class="main_nav__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="main_nav__item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main_content">
+    <div class="container clearfix">
+      <div class="main_content__img">
+        <img src="img/responsive-layout-profile-new.png" alt="Nik Kolosoff Profile Photo">
+      </div>
+      <p class="main_content__text">
+        Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am exited to put all my skills to use!
+      </p>
+    </div>
+  </main>
+
+  <section class="portfolio container" id="portfolio">
+    <h2 class="section_headline portfolio_headline">Portfolio</h2>
+    <div class="portfolio__gallery">
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-1.png" alt="Marketing Page">
+        <h3 class="gallery__headline">Marketing Page</h3>
+        <p class="gallery__text">This project shows the front page of a marketing website meant for a specific buisness I'm interested in.</p>
+      </article>
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-2.png" alt="Search Page">
+        <h3 class="gallery__headline">Search Page</h3>
+        <p class="gallery__text">This project searches through a specific database to find information that the use is trying to look up.</p>
+      </article>
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-3.png" alt="Travel App">
+        <h3 class="gallery__headline">Travel App</h3>
+        <p class="gallery__text">This poject compares teavel times based on different transportation methods and tells you the best one.</p>
+      </article>
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-4.png" alt="Map of Favorite Spots">
+        <h3 class="gallery__headline">Map of Favorite Spots</h3>
+        <p class="gallery__text">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      </article>
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-5.png" alt="Photo Gallery">
+        <h3 class="gallery__headline">Photo Gallery </h3>
+        <p class="gallery__text">This project shows pictyes from a recnt trip to the viewe and allows them to easily navigate through photos.</p>
+      </article>
+      <article class="gallery__body">
+        <img class="gallery__img" src="img/portfolio-6.png" alt="Calculator">
+        <h3 class="gallery__headline">Calculator</h3>
+        <p class="gallery__text">Someone car enter in the numbers they want, and press the big blue button and get the result.</p>
+      </article>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section_headline contact__headline">Contact</h2>
+      <p class="contact__text">If you're interested in chatting or want more information about what i've been working on, i'd love to hear from you!</p>
+      <address class="contact__info">
+        <span class="info__item">Phone <a class="contact__phone" href="tel:+1(111)555-1234">+1(111)555-1234</a></span>
+        <span class="info__item">Email <a class="contact__email" href="mailto:email@yoursite.com">email@yoursite.com</a></span>
+      </address>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <nav class="footer_nav clearfix">
+        <ul class="footer_nav__mobile_list clearfix">
+          <li class="mobile_list__item">Nik Kolosoff</li>
+          <li class="mobile_list__item"><a href="#top">Back to top</a></li>
+        </ul>
+        <h3 class="footer__student_name">Nik Kolosoff</h3>
+        <ul class="footer_nav__desktop_list">
+          <li class="desktop_list__item"><a href="#top">Home</a></li>
+          <li class="desktop_list__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="desktop_list__item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+  background: url("../img/kana-wallpaper-one.jpg") no-repeat center top / cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.something_important {
+  width: 100vw;
+  height: calc(100vh - 250px);
+  font-size: -999px;
+}
+
+.dialogue_window {
+  height: 250px;
+  width: 100%;
+  background: rgba(1, 24, 42, .7);
+}
+
+.kana_avatar {
+  border-radius: 50%;
+  padding-top: 3%;
+  display: inline-block;
+  width: 20%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.kana_avatar>img {
+  border-radius: 50%;
+}
+
+.dialogue_txt {
+  width: 60%;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+}
+
+.btn_next {
+  width: 100px;
+  height: 35px;
+  font-family: 'Audiowide', cursive;
+  border: 1px solid #000;
+  background-color: #fff;
+  align-self: center;
+}
